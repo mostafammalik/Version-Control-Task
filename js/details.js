@@ -17,6 +17,7 @@ document.getElementById("favorite").addEventListener("click", function () {
     alert("Product removed from favorites!");
   }
 });
+console.log("test");
 
 // Simulating loading of reviews
 document.addEventListener("DOMContentLoaded", function () {
