@@ -17,6 +17,7 @@ document.getElementById("favorite").addEventListener("click", function () {
     alert("Product removed from favorites!");
   }
 });
+console.log("test");
 
 // Simulating loading of reviews
 document.addEventListener("DOMContentLoaded", function () {
@@ -92,6 +93,7 @@ battery.style.fontSize = "25px";
 camera.style.fontSize = "25px";
 screensize.style.fontSize = "25px";
 Ram.style.fontSize = "25px";
+console.log("3 comments");
 
 var img1 = document.getElementById("img1");
 img1.setAttribute("src", `${product.image}`);
