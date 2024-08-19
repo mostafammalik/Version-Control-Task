@@ -6,7 +6,7 @@ function getProduct() {
 }
 
 document.getElementById("add-to-cart").addEventListener("click", function () {
-  alert("Product added to cart!");
+  alert("Product added to cart succes!");
 });
 
 document.getElementById("favorite").addEventListener("click", function () {
