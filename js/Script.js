@@ -26,12 +26,14 @@ var about = document.getElementById("About");
 about.onclick = function () {
   window.location = "../HTML/About.html";
 };
+console.log("3333333333333333333");
+
 ///////////////////////
 //cart
 var cart = document.getElementById("cart-container");
 cart.onclick = function () {
   // window.location = "../HTML/Cart.html";
-  window.open("../HTML/Cart.html","blank")
+  window.open("../HTML/Cart.html", "blank");
 };
 ////////////////////////
 //about
