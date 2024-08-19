@@ -1,3 +1,5 @@
+console.log("you are here ");
+
 var abouthead = document.getElementById("navbarabout");
 abouthead.innerHTML = `
  <header id="navbar">
