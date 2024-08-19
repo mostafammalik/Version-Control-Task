@@ -41,7 +41,7 @@ function createProductCard(_name, _price, _img, _desc, _sale_price, code) {
   card.style.paddingInline = "10px";
   card.style.marginBlock = "15px";
   card.style.height = "max-content";
-  card.style.width = "250px";
+  card.style.width = "260px";
   card.style.border = "1px solid gray";
   card.style.borderRadius = "15px";
   card.style.position = "relative"; // Add relative positioning to card for the delete button
@@ -71,7 +71,7 @@ function createProductCard(_name, _price, _img, _desc, _sale_price, code) {
   var productImage = document.createElement("img");
   productImage.src = `${_img}`;
   productImage.style.width = "70%";
-  productImage.style.height = "250px";
+  productImage.style.height = "260px";
   productImage.style.marginInline = "40px";
   productImage.style.mixBlendMode = "multiply";
   productImage.className = "product-image";

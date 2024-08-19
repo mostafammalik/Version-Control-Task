@@ -22,9 +22,9 @@ contener.style.display = "inline-block";
 // contener.style.position="flex"
 
 var cont = 0;
+console.log("=======================");
 
-function createProductCard
-  (
+function createProductCard(
   _name,
   _price,
   _img,
@@ -63,6 +63,7 @@ function createProductCard
   card.style.width = "23%";
   card.style.border = "1px solid gray";
   card.style.borderRadius = "15px";
+  console.log("================================");
 
   card.onclick = function () {
     // alert(product.id + " added to cart");
@@ -92,7 +93,6 @@ function createProductCard
   productImage.className = "product-image";
   card.appendChild(productImage);
 
-
   // Create the product title
   var productTitle = document.createElement("h2");
   // productTitle.classList.add("product-title");
@@ -100,6 +100,7 @@ function createProductCard
   productTitle.style.textAlign = "center";
   productTitle.textContent = `${_name}`;
   card.appendChild(productTitle);
+  console.log("====================================================");
 
   // Create the rating div
   var rating = document.createElement("div");
@@ -108,7 +109,7 @@ function createProductCard
   rating.style.maxHeight = "55px";
   rating.style.overflow = "hidden";
 
-// Dosciption of product
+  // Dosciption of product
   var ratingText = document.createElement("P");
   // ratingText.classList.add("rating-text");
   ratingText.className = "rating-text";
@@ -118,7 +119,6 @@ function createProductCard
   rating.appendChild(ratingText);
   card.appendChild(rating);
 
-
   // Create the price paragraph
   var price = document.createElement("p");
   // price.classList.add("price");
@@ -127,7 +127,7 @@ function createProductCard
   // console.log(typeof( _sale_price));
   // price.appendChild(priceText);
   price.innerHTML += `${_sale_price} $ <br>`;
-/////
+  /////
   var oldPrice = document.createElement("p");
   // oldPrice.classList.add("old-price");
   oldPrice.className = "old-price";
@@ -148,7 +148,6 @@ function createProductCard
   price.style.fontSize = "25px";
   price.appendChild(discount);
   card.appendChild(price);
-
 
   // Create the add to cart button
   var cartButton = document.createElement("button");
@@ -187,7 +186,7 @@ function createProductCard
     crtnum.style.marginLeft = "4px";
     crtnum.innerHTML = `${cont}`;
     localStorage.setItem("prodectarr", JSON.stringify(cartcontent));
-  }
+  };
 
   // function SendProductDataToPoduct_details_page(_name, _price, _brand) {
   //   var product = {};
